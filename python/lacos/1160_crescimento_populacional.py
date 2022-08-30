@@ -1,11 +1,13 @@
+# resolvido 100%
+
 t = int(input())
 dados = []
 
-for i in range(t):
+for i in range(t): # leitura de dados
   dados = list(input().split())
   for i in range(len(dados)//2):
     dados[i] = int(dados[i])
-    dados[i+2] = float(dados[i+2])
+    dados[i+2] = float(dados[i+2]) # prefere-se o uso de 4 variáveis para o processamento de dados
     
   tempo = 0;
   while dados[0] <= dados[1]:
@@ -25,10 +27,11 @@ for i in range(t):
     print(tempo, "anos.")
   else: 
     print("Mais de 1 seculo.") #para todos os casos de mais de 100 anos
-#100%
+
 
 '''
-
+Casos de teste:
+Entrada:
 6
 100 150 1.0 0
 90000 120000 5.5 3.5
@@ -37,6 +40,7 @@ for i in range(t):
 100000 110000 1.5 0.5
 62422 484317 3.1 1.0
 
+Saída:
 51 anos.
 16 anos.
 12 anos.
