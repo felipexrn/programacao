@@ -34,7 +34,6 @@ while True:
 Casos de testes:
 
 Entradas:
-
 3
 0 6 8 1
 1 5 6 3
@@ -46,7 +45,6 @@ Entradas:
 0
 
 Saídas:
-
 Teste 1
 2 4 6 3
 
