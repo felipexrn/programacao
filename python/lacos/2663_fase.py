@@ -5,12 +5,12 @@ k = int(input())
 p = []
 
 for i in range(n):
-  p.append(int(input())) # lê os dados
+  p.append(int(input()))
 
-p.sort() # ordena a lista
-p.reverse() # inverte a lista
+p.sort()
+p.reverse()
 ultimo = p[k-1] # seleciona a pontuação do último colocado
-p.reverse() # inverte a lista
+p.reverse()
 p = p[p.index(ultimo):] # procura a primeira ocorrencia da pontuação do último colocado
 
 print(len(p)) # imprime quantos foram classificados
