@@ -1,3 +1,5 @@
+# resolvido 100% 
+
 teste = 1 # Contador de testes
 while True:
   n = int(input())
@@ -28,8 +30,10 @@ while True:
     print()
   teste += 1
   
-#100
 '''
+Casos de testes:
+
+Entradas:
 
 3
 0 6 8 1
@@ -41,9 +45,10 @@ while True:
 6 4 10 0
 0
 
+Saídas:
+
 Teste 1
 2 4 6 3
-
 
 Teste 2
 nenhum
