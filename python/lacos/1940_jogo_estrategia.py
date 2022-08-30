@@ -1,3 +1,5 @@
+# resolvido 100%
+
 j, r = map(int, input().split())
 jogadores = []
 rodadas = []
@@ -20,13 +22,17 @@ for i in range(j):
 print(ganhador)
 
 '''
-Amostras de entrada	Amostras de saída
+Casos de teste:
+Entrada:
 3 3
 1 1 1 1 2 2 2 3 3
+Saída:
 3
 
+Entrada
 2 3
 0 0 1 0 2 0
+Saída:
 1
 
 '''
