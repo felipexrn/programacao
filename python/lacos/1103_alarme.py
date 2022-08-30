@@ -1,3 +1,5 @@
+# resolvido 100% 
+
 fim = False
 while not fim:
   h = list(map(int, input().split()))
@@ -30,24 +32,28 @@ while not fim:
         
     print(abs(tempo))
 
-#100% 
 
 '''
+Casos de teste:
 
+Entrada:
 1 5 3 5
 23 59 0 34
 21 33 21 10
 0 0 0 0
 
+Saída:
 120
 35
 1417
 
+Entrada:
 23 27 1 59 
 22 30 8 30
 21 00 8 00
 0 0 0 0
 
+Saída:
 152
 600
 660
