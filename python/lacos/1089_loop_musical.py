@@ -1,3 +1,5 @@
+# resolvido 100% 
+
 pico = 0
 while int(input()) != 0:  
   h = list(map(int, input().split()))
@@ -23,8 +25,10 @@ while int(input()) != 0:
     
   print(pico)
   pico = 0
-#100% 
+
 '''
+Casos de teste
+Entrada:
 2
 1 -3
 6
@@ -33,6 +37,7 @@ while int(input()) != 0:
 300 450 449 450
 0
 
+Saída:
 2
 2
 4
