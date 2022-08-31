@@ -1,12 +1,9 @@
 def feliz(num):
-  if num == 1: return num # retorna 1 se 1
+  if num == 1: return num
   else:
-    while num != 1 and num != 4: # enquanto num não for 1 ou 4
+    while num != 1: # enquanto num não for 1
       algarismos = []
       while num < 10: # eleva o num ao quadrado se menor que 10
-        if num**2 == 4:
-          algarismos.append(num)
-          break
         num = num**2
       while num//10 != 0: # separa os algarismos de num
         algarismos.append(num%10)
@@ -14,14 +11,11 @@ def feliz(num):
         if num//10 == 0:
           algarismos.append(num%10)
           break # aqui evito de passar novamente no while
-      if num != 4:
-        for i in range(len(algarismos)):
-          algarismos[i] = algarismos[i]**2 # eleva os algarismos de num ao quadrado
-        num = sum(algarismos)
-        #print(algarismos)
-        #print(num, num**2)
-        if num == 4: # se num for igual a 4 ele para o laço
-          break
+      for i in range(len(algarismos)):
+        algarismos[i] = algarismos[i]**2 # eleva os algarismos de num ao quadrado
+      num = sum(algarismos)
+      if num == 4: # se num for igual a 4 ele para o laço
+        break
     return num  
     
 n = int(input())
@@ -33,6 +27,7 @@ for i in x:
     num_feliz += 1
 
 print(num_feliz)
+
 
 # time limit exceeded ou 100% Vai entender
 
