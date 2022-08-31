@@ -2,6 +2,8 @@ def feliz(num):
   if num == 1: return num
   else:
     while num != 1: # enquanto num não for 1
+      if num == 4:
+        break
       algarismos = []
       while num < 10: # eleva o num ao quadrado se menor que 10
         num = num**2
