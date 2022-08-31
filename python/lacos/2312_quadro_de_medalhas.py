@@ -1,3 +1,5 @@
+# resolvido 100%
+
 def troca(lista): # troca itens da lista
   primeiro = lista[0]
   del lista[0]
@@ -12,13 +14,12 @@ for i in range(n): # lê a entrada
   pais = list(input().split())
   podium.append(pais)
 
-podium.sort(reverse = True) # ordena por ordem alfabética
-#podium.reverse() # ordena por ordem alfabética (para comparação numérica)
+podium.sort(reverse = True) # ordena por ordem alfabética decrescente (para comparação numérica)
 
 for i in range(len(podium)):
   pais = podium[i]
   paises.append(pais[0]) # reserva os nomes dos paises
-  pais[0] = i
+  pais[0] = i # troca o nome do país por um número 
   for j in range(4): # converte números de medalhas para int
     pais[j] = int(pais[j])
 
@@ -55,6 +56,8 @@ for i in range(len(resultado)): # colocar o nome do pais novamente no lugar
   print(*resultado[i])
 
 '''
+Casos de teste:
+Entrada:
 8
 Belgica 2 2 2
 Brasil 7 6 6
@@ -65,6 +68,7 @@ Colombia 3 2 3
 Suica 3 2 2
 Tailandia 2 2 2
 
+Saída:
 Franca 10 18 14
 Italia 8 12 8
 Australia 8 11 10
