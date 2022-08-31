@@ -1,3 +1,5 @@
+# resolvido 100%
+
 t = int(input())
 for i in range(t): # leitura de dados
   d, n = map(float, input().split())
@@ -18,14 +20,18 @@ for i in range(t): # leitura de dados
   else: 
     print(f"{max(trocos):.2f}") # maior troco possível
 
-#100%
+
 '''
+Casos de teste:
+
+Entrada:
 2
 50 3
 15 50 24.35
 50 4
 15 16.50 50 22.40
 
+]Saída
 5.00
 5.20
 
