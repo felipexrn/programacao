@@ -1,3 +1,5 @@
+# resolvido 100% Não faço ideia de como isso funciona \o/
+
 n, m = map(int, input().split())
 p1 = n
 p2 = m
@@ -20,15 +22,18 @@ def eh_primo(num):
   return num
 
 print(eh_primo(p1)*eh_primo(p2))
-#100% Não faço ideia de como isso funciona \o/
+
 
 '''
-
-Amostras de entrada	Amostras de saída
+Casos de teste:
+Entrada
 10 15
+Saída
 91
 
+Entrada
 50 100
+Saída
 4559
 
 '''
