@@ -7,12 +7,9 @@ def feliz(num):
       algarismos = []
       while num < 10: # eleva o num ao quadrado se menor que 10
         num = num**2
-      while num//10 > 0: # separa os algarismos de num
+      while num > 0: # separa os algarismos de num
         algarismos.append((num%10)**2) # eleva os algarismos de num ao quadrado
         num = num//10
-        if num//10 == 0:
-          algarismos.append((num%10)**2)
-          break # aqui evito de passar novamente no while
       num = sum(algarismos)
     return num  
     
